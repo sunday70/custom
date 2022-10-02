@@ -30,6 +30,12 @@ M.general = {
 
     -- save
     ["<C-l>"] = { "<cmd> w <CR>", "save file" },
+    
+    -- Resize with arrows
+    ["<C-up>"] = { "<cmd> res +5<CR>", "" },
+    ["<C-down>"] = { "<cmd> res -5<CR>", "" },
+    ["<C-left>"] = { "<cmd> vertical resize-5<CR>", "" },
+    ["<C-right>"] = { "<cmd> vertical resize+5<CR>", "" },
 
 --    -- Copy all
 --    ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },

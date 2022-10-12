@@ -17,6 +17,7 @@ M.plugins = {
   user = {
     ["neovim/nvim-lspconfig"] = {
     config = function()
+      require "plugins.configs.lspconfig"
       require "custom.love"
     end,
     },

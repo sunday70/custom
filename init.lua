@@ -15,6 +15,7 @@ local autocmd = vim.api.nvim_create_autocmd
 --------------------
 -- base options
 --------------------
+vim.opt.relativenumber = true  -- 设置相对行号
 opt.mouse = nil
 opt.tabstop = 2
 opt.softtabstop = 2

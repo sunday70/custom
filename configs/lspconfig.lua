@@ -10,7 +10,7 @@ local servers = {
   -- sql, markdown, json, xml, yml
   "sqlls", "marksman", "jsonls", "lemminx", "yamlls",
   -- html, css, js, vue
-  "html", "cssls", "quick_lint_js", "volar",
+  "html", "tsserver", "cssls", "quick_lint_js", "volar",
   -- c, shell, toml
   "clangd", "bashls", "taplo" 
 }

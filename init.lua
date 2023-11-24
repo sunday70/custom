@@ -24,7 +24,7 @@ opt.expandtab = true
 opt.ignorecase = true
 opt.whichwrap = "<,>"
 
-g.mapleader = "≈"
+g.mapleader = ","
 
 g.vscode_snippets_path = vim.fn.stdpath("config") .. "/lua/custom/snippets"
 

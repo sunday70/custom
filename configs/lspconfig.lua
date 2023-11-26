@@ -4,15 +4,15 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
-local servers = { 
-  -- java, python, go, c#
-  "jdtls", "jedi_language_server", "gopls", "omnisharp",
-  -- sql, markdown, json, xml, yml
-  "sqlls", "marksman", "jsonls", "lemminx", "yamlls",
+local servers = {
+  -- java, python, go, c# ("jedi_language_server", "gopls", "omnisharp",)
+  "jdtls",
+  -- sql, markdown, json, xml, yml ("sqlls",)
+  "marksman", "jsonls", "lemminx", "yamlls",
   -- html, css, js, vue
-  "html", "tsserver", "cssls", "quick_lint_js", "volar",
+  "html", "cssls", "quick_lint_js", "tsserver", "volar",
   -- c, shell, toml
-  "clangd", "bashls", "taplo" 
+  "clangd", "bashls", "taplo"
 }
 
 for _, lsp in ipairs(servers) do
@@ -22,5 +22,5 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- 
+--
 -- lspconfig.pyright.setup { blabla}

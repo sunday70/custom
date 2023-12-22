@@ -8,6 +8,8 @@ local M = {}
 
 M.general = {
  i = {
+   -- insert mode leader key overrides keymap
+   ["<leader>"] = { ",", "space" },
 --    -- go to  beginning and end
 --    ["<C-b>"] = { "<ESC>^i", "beginning of line" },
 --    ["<C-e>"] = { "<End>", "end of line" },
@@ -444,5 +446,15 @@ M.general_1 = {
     ["L"] = {"S", "noremap", opts = {}},
   },
 }
+
+-- In order to disable a default keymap, use
+-- M.disabled = {
+--   i = {
+--   },
+--   n = {
+--   },
+--   v = {
+--   }
+-- }
 
 return M

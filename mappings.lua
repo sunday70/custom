@@ -448,13 +448,14 @@ M.general_1 = {
 }
 
 -- In order to disable a default keymap, use
--- M.disabled = {
---   i = {
---   },
---   n = {
---   },
---   v = {
---   }
--- }
+M.disabled = {
+  -- i = {
+  -- },
+  -- v = {
+  -- },
+  n = {
+    ["<C-s>"] = ""
+  }
+}
 
 return M

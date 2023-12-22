@@ -7,17 +7,17 @@ end
 local M = {}
 
 M.general = {
---  i = {
+ i = {
 --    -- go to  beginning and end
 --    ["<C-b>"] = { "<ESC>^i", "beginning of line" },
 --    ["<C-e>"] = { "<End>", "end of line" },
 --
---    -- navigate within insert mode
---    ["<C-h>"] = { "<Left>", "move left" },
---    ["<C-s>"] = { "<Right>", "move right" },
---    ["<C-t>"] = { "<Down>", "move down" },
---    ["<C-n>"] = { "<Up>", "move up" },
---  },
+   -- navigate within insert mode
+   ["<C-h>"] = { "<Left>", "move left" },
+   ["<C-t>"] = { "<Down>", "move down" },
+   ["<C-n>"] = { "<Up>", "move up" },
+   ["<C-s>"] = { "<Right>", "move right" },
+ },
 
   n = {
 --    ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },

@@ -15,10 +15,12 @@ M.general = {
 --    ["<C-e>"] = { "<End>", "end of line" },
 --
    -- navigate within insert mode
-   ["<C-h>"] = { "<Left>", "move left" },
-   ["<C-t>"] = { "<Down>", "move down" },
-   ["<C-n>"] = { "<Up>", "move up" },
-   ["<C-s>"] = { "<Right>", "move right" },
+   ["<C-b>"] = { "<Left>", "move left" },
+   ["<C-n>"] = { "<Down>", "move down" },
+   ["<C-p>"] = { "<Up>", "move up" },
+   ["<C-f>"] = { "<Right>", "move right" },
+   ["<C-a>"] = { "<Home>", "home" },
+   ["<C-e>"] = { "<End>", "end" },
  },
 
   n = {
@@ -453,10 +455,11 @@ M.general_1 = {
 
 -- In order to disable a default keymap, use
 M.disabled = {
-  -- i = {
-  -- },
   -- v = {
   -- },
+  i = {
+    ["<C-h>"] = ""
+  },
   n = {
     ["<C-s>"] = ""
   }

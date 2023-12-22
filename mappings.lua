@@ -24,15 +24,19 @@ M.general = {
   n = {
 --    ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 
-    -- switch between windows
-    ["Ó"] = { "<C-w>h", "window left" },
-    ["Í"] = { "<C-w>l", "window right" },
-    ["ˇ"] = { "<C-w>j", "window down" },
-    ["˜"] = { "<C-w>k", "window up" },
-
     -- save
     ["<C-l>"] = { "<cmd> w <CR>", "save file" },
-    
+
+    -- quit
+    ["<leader>q"] = { "<cmd> wq! <CR>", "quit" },
+    ["<leader>Q"] = { "<cmd> wqa! <CR>", "quit all" },
+
+    -- switch between windows
+    ["<C-w>t"] = { "<C-w>j", "window down" },
+    ["<C-w>n"] = { "<C-w>k", "window up" },
+    ["<C-w>s"] = { "<C-w>l", "window right" },
+    ["<C-w>-"] = { "<C-w>s", "window right" },
+
     -- Resize with arrows
     ["<C-up>"] = { "<cmd> res +5<CR>", "" },
     ["<C-down>"] = { "<cmd> res -5<CR>", "" },

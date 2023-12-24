@@ -27,6 +27,9 @@ M.general = {
   n = {
     -- ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 
+    -- delete word
+    ["<leader>d"] = {"daw", "Delete word"},
+
     -- replace tabs with spaces
     ["<leader>rt"] = {"<cmd> %ret! 2 <CR>", "Replace tabs with spaces"},
 

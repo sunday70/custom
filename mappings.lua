@@ -437,20 +437,20 @@ M.general_normal = {
   },
 }
 
-M.general_v = {
+M.general_visual = {
   v = {
-    ["t"] = {"j", "V-line t", opts = {}},
-    ["n"] = {"k", "V-line n", opts = {}},
-    ["s"] = {"l", "V-line s", opts = {}},
-    ["j"] = {"t", "V-line j", opts = {}},
-    ["k"] = {"n", "V-line k", opts = {}},
-    ["l"] = {"s", "V-line l", opts = {}},
-    ["T"] = {"J", "V-line T", opts = {}},
-    ["N"] = {"K", "V-line N", opts = {}},
-    ["S"] = {"L", "V-line S", opts = {}},
-    ["J"] = {"T", "V-line J", opts = {}},
-    ["K"] = {"N", "V-line K", opts = {}},
-    ["L"] = {"S", "V-line L", opts = {}},
+    ["t"] = {"j", "Visual t", opts = {}},
+    ["n"] = {"k", "Visual n", opts = {}},
+    ["s"] = {"l", "Visual s", opts = {}},
+    ["j"] = {"t", "Visual j", opts = {}},
+    ["k"] = {"n", "Visual k", opts = {}},
+    ["l"] = {"s", "Visual l", opts = {}},
+    ["T"] = {"J", "Visual T", opts = {}},
+    ["N"] = {"K", "Visual N", opts = {}},
+    ["S"] = {"L", "Visual S", opts = {}},
+    ["J"] = {"T", "Visual J", opts = {}},
+    ["K"] = {"N", "Visual K", opts = {}},
+    ["L"] = {"S", "Visual L", opts = {}},
   },
 }
 

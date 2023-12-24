@@ -38,7 +38,7 @@ M.general = {
     ["<C-w>t"] = { "<C-w>j", "Window down" },
     ["<C-w>n"] = { "<C-w>k", "Window up" },
     ["<C-w>s"] = { "<C-w>l", "Window right" },
-    ["<C-w>-"] = { "<C-w>s", "Create window of down" },
+    ["<C-w>-"] = { "<C-w>s", "Create window from down" },
 
     -- Resize with arrows
     ["<C-up>"] = { "<cmd> res +5<CR>", "" },

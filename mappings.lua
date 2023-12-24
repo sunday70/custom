@@ -27,6 +27,9 @@ M.general = {
   n = {
     -- ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 
+    -- replace tab key with space
+    ["<leader>rt"] = {"<cmd> %ret! 2 <CR>", "Replace tab key with space"},
+
     -- save
     ["<C-l>"] = { "<cmd> w <CR>", "Save file" },
 

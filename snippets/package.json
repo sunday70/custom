@@ -13,6 +13,9 @@
         "language": "javascript",
         "path": "./javascript.json"
       }, {
+        "language": "typescript",
+        "path": "./typescript.json"
+      }, {
         "language": "sh",
         "path": "./sh.json"
       }, {

@@ -27,6 +27,9 @@ M.general = {
   n = {
     -- ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 
+    -- read source code
+    ["<leader>tt"] = { "<cmd> TagbarToggle <CR>", "toggle tagbar" },
+
     -- delete word
     ["<leader>d"] = {"daw", "Delete word"},
 

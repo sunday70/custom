@@ -49,12 +49,12 @@ M.mason = {
     -- "java-debug-adapter",
     -- "java-test",
     -- "openjdk-17",
+    -- "jdtls",
 
     -- me
     "actionlint",
     "eslint-lsp",
     "golangci-lint",
-    "jdtls",
     "json-lsp",
     "julia-lsp",
     "latexindent",

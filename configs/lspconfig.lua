@@ -5,12 +5,14 @@ local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
 local servers = {
-  -- java, python, go, c# ("jedi_language_server", "gopls", "omnisharp",)
-  "jdtls",
+  -- java, python, go, c# ("jdtls", "jedi_language_server", "gopls", "omnisharp",)
+
   -- sql, markdown, json, xml, yml ("sqlls",)
   "marksman", "jsonls", "lemminx", "yamlls",
+
   -- html, css, js, vue
   "html", "cssls", "quick_lint_js", "tsserver", "volar",
+
   -- c, shell, toml
   "clangd", "bashls", "taplo"
 }

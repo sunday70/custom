@@ -16,8 +16,8 @@ local autocmd = vim.api.nvim_create_autocmd
 -- base options
 --------------------
 -- opt.guicursor = ""
-opt.relativenumber = true  -- 设置相对行号
-opt.mouse = nil
+opt.relativenumber = true -- 设置相对行号
+opt.mouse = "a"           -- mouse nil/"a"
 opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
@@ -27,13 +27,13 @@ opt.whichwrap = "<,>"
 
 g.mapleader = ","
 
-g.vscode_snippets_path = vim.fn.stdpath("config") .. "/lua/custom/snippets"
+g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets"
 
 -- goto last postion
-cmd([[au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif]])
+cmd [[au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif]]
 
 -- toggle quickfix window borrowed from lvim
-cmd([[
+cmd [[
   function! QuickFixToggle()
     if empty(filter(getwininfo(), 'v:val.quickfix'))
       copen
@@ -41,7 +41,7 @@ cmd([[
       cclose
     endif
   endfunction
-]])
+]]
 
 autocmd("FileType", {
   pattern = { "c", "cpp", "lua", "sh", "go" },

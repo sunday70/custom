@@ -37,7 +37,7 @@ M.mason = {
     -- -- c/cpp stuff
     -- "clangd",
     -- "clang-format",
-    
+
     -- me
     "actionlint",
     "bash-language-server",

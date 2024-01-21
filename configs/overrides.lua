@@ -23,20 +23,52 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
+    -- -- lua stuff
+    -- "lua-language-server",
+    -- "stylua",
 
-    -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "prettier",
+    -- -- web dev stuff
+    -- "css-lsp",
+    -- "html-lsp",
+    -- "typescript-language-server",
+    -- "deno",
+    -- "prettier",
 
-    -- c/cpp stuff
-    "clangd",
+    -- -- c/cpp stuff
+    -- "clangd",
+    -- "clang-format",
+    
+    -- me
+    "actionlint",
+    "bash-language-server",
     "clang-format",
+    "clangd",
+    "css-lsp",
+    "deno",
+    "eslint-lsp",
+    "golangci-lint",
+    "google-java-format",
+    "html-lsp",
+    "java-debug-adapter",
+    "java-test",
+    "jdtls",
+    "json-lsp",
+    "julia-lsp",
+    "latexindent",
+    "lemminx",
+    "lua-language-server",
+    "marksman",
+    "openjdk-17",
+    "prettier",
+    "quick-lint-js",
+    "shellcheck",
+    "shfmt",
+    "stylua",
+    "taplo",
+    "texlab",
+    "typescript-language-server",
+    "vue-language-server",
+    "yaml-language-server",
   },
 }
 

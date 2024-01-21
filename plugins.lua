@@ -7,7 +7,7 @@
 --
 -------------------------------------------------------------------------------
 
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -21,13 +21,13 @@ local plugins = {
       {
         "jose-elias-alvarez/null-ls.nvim",
         config = function()
-          require("custom.configs.null-ls")
+          require "custom.configs.null-ls"
         end,
       },
     },
     config = function()
-      require("plugins.configs.lspconfig")
-      require("custom.configs.lspconfig")
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
     end, -- Override to setup mason-lspconfig
   },
 
@@ -55,10 +55,10 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
-  { "majutsushi/tagbar", lazy = false },
-  { "godlygeek/tabular", lazy = false },
+  { "majutsushi/tagbar",              lazy = false },
+  { "godlygeek/tabular",              lazy = false },
   { "ntpeters/vim-better-whitespace", lazy = false },
-  { "vim-scripts/a.vim", lazy = false },
+  { "vim-scripts/a.vim",              lazy = false },
   {
     "NvChad/nvterm",
     opts = {
@@ -69,6 +69,29 @@ local plugins = {
             col = 0.1,
             width = 0.8,
             height = 0.7,
+          },
+        },
+      },
+    },
+  },
+
+  -- nvim-java
+  {
+    "nvim-java/nvim-java",
+    dependencies = {
+      "nvim-java/lua-async-await",
+      "nvim-java/nvim-java-core",
+      "nvim-java/nvim-java-test",
+      "nvim-java/nvim-java-dap",
+      "MunifTanjim/nui.nvim",
+      "neovim/nvim-lspconfig",
+      "mfussenegger/nvim-dap",
+      {
+        "williamboman/mason.nvim",
+        opts = {
+          registries = {
+            "github:nvim-java/mason-registry",
+            "github:mason-org/mason-registry",
           },
         },
       },

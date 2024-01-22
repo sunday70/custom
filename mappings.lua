@@ -22,7 +22,7 @@ M.general = {
     ["<C-f>"] = { "<Right>", "Move right" },
     ["<C-a>"] = { "<Home>", "Home" },
     ["<C-e>"] = { "<End>", "End" },
- },
+  },
 
   n = {
     -- ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
@@ -31,10 +31,10 @@ M.general = {
     ["<leader>tt"] = { "<cmd> TagbarToggle <CR>", "toggle tagbar" },
 
     -- delete word
-    ["<leader>d"] = {"daw", "Delete word"},
+    ["dw"] = { "daw", "Delete word" },
 
     -- replace tabs with spaces
-    ["<leader>rt"] = {"<cmd> %ret! 2 <CR>", "Replace tabs with spaces"},
+    ["<leader>rt"] = { "<cmd> %ret! 2 <CR>", "Replace tabs with spaces" },
 
     -- save
     ["<C-l>"] = { "<cmd> w <CR>", "Save file" },
@@ -431,35 +431,35 @@ M.general = {
 -- h t n s
 M.general_normal = {
   n = {
-    ["t"] = {"j", "Normal t", opts = {}},
-    ["n"] = {"k", "Normal n", opts = {}},
-    ["s"] = {"l", "Normal s", opts = {}},
-    ["j"] = {"t", "Normal j", opts = {}},
-    ["k"] = {"n", "Normal k", opts = {}},
-    ["l"] = {"s", "Normal l", opts = {}},
-    ["T"] = {"J", "Normal T", opts = {}},
-    ["N"] = {"K", "Normal N", opts = {}},
-    ["S"] = {"L", "Normal S", opts = {}},
-    ["J"] = {"T", "Normal J", opts = {}},
-    ["K"] = {"N", "Normal K", opts = {}},
-    ["L"] = {"S", "Normal L", opts = {}},
+    ["t"] = { "j", "Normal t", opts = {} },
+    ["n"] = { "k", "Normal n", opts = {} },
+    ["s"] = { "l", "Normal s", opts = {} },
+    ["j"] = { "t", "Normal j", opts = {} },
+    ["k"] = { "n", "Normal k", opts = {} },
+    ["l"] = { "s", "Normal l", opts = {} },
+    ["T"] = { "J", "Normal T", opts = {} },
+    ["N"] = { "K", "Normal N", opts = {} },
+    ["S"] = { "L", "Normal S", opts = {} },
+    ["J"] = { "T", "Normal J", opts = {} },
+    ["K"] = { "N", "Normal K", opts = {} },
+    ["L"] = { "S", "Normal L", opts = {} },
   },
 }
 
 M.general_visual = {
   v = {
-    ["t"] = {"j", "Visual t", opts = {}},
-    ["n"] = {"k", "Visual n", opts = {}},
-    ["s"] = {"l", "Visual s", opts = {}},
-    ["j"] = {"t", "Visual j", opts = {}},
-    ["k"] = {"n", "Visual k", opts = {}},
-    ["l"] = {"s", "Visual l", opts = {}},
-    ["T"] = {"J", "Visual T", opts = {}},
-    ["N"] = {"K", "Visual N", opts = {}},
-    ["S"] = {"L", "Visual S", opts = {}},
-    ["J"] = {"T", "Visual J", opts = {}},
-    ["K"] = {"N", "Visual K", opts = {}},
-    ["L"] = {"S", "Visual L", opts = {}},
+    ["t"] = { "j", "Visual t", opts = {} },
+    ["n"] = { "k", "Visual n", opts = {} },
+    ["s"] = { "l", "Visual s", opts = {} },
+    ["j"] = { "t", "Visual j", opts = {} },
+    ["k"] = { "n", "Visual k", opts = {} },
+    ["l"] = { "s", "Visual l", opts = {} },
+    ["T"] = { "J", "Visual T", opts = {} },
+    ["N"] = { "K", "Visual N", opts = {} },
+    ["S"] = { "L", "Visual S", opts = {} },
+    ["J"] = { "T", "Visual J", opts = {} },
+    ["K"] = { "N", "Visual K", opts = {} },
+    ["L"] = { "S", "Visual L", opts = {} },
   },
 }
 
@@ -468,11 +468,11 @@ M.disabled = {
   -- v = {
   -- },
   i = {
-    ["<C-h>"] = ""
+    ["<C-h>"] = "",
   },
   n = {
-    ["<C-s>"] = ""
-  }
+    ["<C-s>"] = "",
+  },
 }
 
 return M

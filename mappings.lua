@@ -50,10 +50,10 @@ M.general = {
     ["<C-w>-"] = { "<C-w>s", "Create window from down" },
 
     -- Resize with arrows
-    ["<C-up>"] = { "<cmd> res +5<CR>", "" },
-    ["<C-down>"] = { "<cmd> res -5<CR>", "" },
-    ["<C-left>"] = { "<cmd> vertical resize-5<CR>", "" },
-    ["<C-right>"] = { "<cmd> vertical resize+5<CR>", "" },
+    ["<C-up>"] = { "<cmd> res -5<CR>", "" },
+    ["<C-down>"] = { "<cmd> res +5<CR>", "" },
+    ["<C-left>"] = { "<cmd> vertical resize+5<CR>", "" },
+    ["<C-right>"] = { "<cmd> vertical resize-5<CR>", "" },
 
     -- -- Copy all
     -- ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },

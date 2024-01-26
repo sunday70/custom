@@ -25,10 +25,13 @@ M.general = {
   },
 
   n = {
+    -- lsp text document/hover
+    ["<leader>ll"] = { "<cmd> lua vim.lsp.buf.hover() <CR>", "Lsp text document" },
+
     -- ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 
     -- read source code
-    ["<leader>tt"] = { "<cmd> TagbarToggle <CR>", "toggle tagbar" },
+    ["<leader>tt"] = { "<cmd> TagbarToggle <CR>", "Toggle tagbar" },
 
     -- delete word
     ["dw"] = { "daw", "Delete word" },

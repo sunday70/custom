@@ -106,7 +106,7 @@ local plugins = {
     build = ":call mkdp#util#install()",
   },
 
-  -- textDocument/hover
+  -- lsp textDocument/hover
   {
     "tamago324/lsp-preview-hover-doc.nvim",
   },

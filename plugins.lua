@@ -117,6 +117,7 @@ local plugins = {
     config = function()
       require("fold-preview").setup {
         -- Your configuration goes here.
+        auto = true,
       }
     end,
   },

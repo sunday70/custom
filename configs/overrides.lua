@@ -52,6 +52,7 @@ M.mason = {
     -- "jdtls",
 
     -- me
+    "vtsls",
     "actionlint",
     "eslint-lsp",
     "golangci-lint",

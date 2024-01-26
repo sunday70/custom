@@ -17,8 +17,7 @@ local servers = {
   "html",
   "cssls",
   "vtsls",
-  -- "tsserver",
-  -- "volar",
+  "volar",
 
   -- c, shell, toml
   "clangd",
@@ -63,18 +62,6 @@ lspconfig.tsserver.setup {
   },
 }
 
-lspconfig.volar.setup {
-  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
-}
-
--- if client.supports_method "textDocument/hover" then
---   -- TODO: Remove mapping after dropping support for Neovim v0.9, it's automatic
---   if vim.fn.has "nvim-0.10" == 0 then
---     lsp_mappings.n["K"] = {
---       function()
---         vim.lsp.buf.hover()
---       end,
---       desc = "Hover symbol details",
---     }
---   end
--- end
+-- lspconfig.volar.setup {
+--   filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+-- }

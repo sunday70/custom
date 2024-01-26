@@ -25,6 +25,9 @@ M.general = {
   },
 
   n = {
+    -- close buffers
+    ["<leader>x"] = { "<cmd> bd <CR>", "Close buffers" },
+
     -- toggle
     ["<C-b>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
 
@@ -36,9 +39,6 @@ M.general = {
     -- read source code
     ["<leader>tt"] = { "<cmd> TagbarToggle <CR>", "Toggle tagbar" },
 
-    -- delete word
-    ["dw"] = { "daw", "Delete word" },
-
     -- replace tabs with spaces
     ["<leader>rt"] = { "<cmd> %ret! 2 <CR>", "Replace tabs with spaces" },
 
@@ -46,8 +46,7 @@ M.general = {
     ["<C-l>"] = { "<cmd> w <CR>", "Save file" },
 
     -- quit
-    ["<leader>q"] = { "<cmd> wq! <CR>", "Quit" },
-    ["<leader>Q"] = { "<cmd> wqa! <CR>", "Quit all" },
+    ["<leader>q"] = { "<cmd> wqa! <CR>", "Quit all" },
 
     -- switch between windows
     ["<C-t>"] = { "<C-w>j", "Window down" },

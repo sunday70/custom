@@ -25,6 +25,9 @@ M.general = {
   },
 
   n = {
+    -- toggle
+    ["<C-b>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+
     -- lsp text document/hover
     ["<leader>ld"] = { "<cmd> lua vim.lsp.buf.hover() <CR>", "Lsp text document" },
 
@@ -47,10 +50,11 @@ M.general = {
     ["<leader>Q"] = { "<cmd> wqa! <CR>", "Quit all" },
 
     -- switch between windows
-    ["<C-w>t"] = { "<C-w>j", "Window down" },
-    ["<C-w>n"] = { "<C-w>k", "Window up" },
-    ["<C-w>s"] = { "<C-w>l", "Window right" },
-    ["<C-w>-"] = { "<C-w>s", "Create window from down" },
+    ["<C-t>"] = { "<C-w>j", "Window down" },
+    ["<C-n>"] = { "<C-w>k", "Window up" },
+    ["<C-s>"] = { "<C-w>l", "Window right" },
+    -- ["<leader>\\"] = { "<C-w>v", "Create window from right" },
+    -- ["<leader>|"] = { "<C-w>s", "Create window from down" },
 
     -- Resize with arrows
     ["<C-up>"] = { "<cmd> res -5<CR>", "" },
@@ -475,6 +479,8 @@ M.disabled = {
   },
   n = {
     ["<C-s>"] = "",
+    -- focus
+    ["<leader>e"] = "",
   },
 }
 

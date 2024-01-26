@@ -100,14 +100,15 @@ local plugins = {
 
   -- markdown-preview
   {
-    {
-      {
-        "iamcco/markdown-preview.nvim",
-        ft = "markdown",
-        -- build = "cd app && yarn install",
-        build = ":call mkdp#util#install()",
-      },
-    },
+    "iamcco/markdown-preview.nvim",
+    ft = "markdown",
+    -- build = "cd app && yarn install",
+    build = ":call mkdp#util#install()",
+  },
+
+  -- textDocument/hover
+  {
+    "tamago324/lsp-preview-hover-doc.nvim",
   },
 
   -- To make a plugin not be loaded

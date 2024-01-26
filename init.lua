@@ -15,8 +15,12 @@ local autocmd = vim.api.nvim_create_autocmd
 --------------------
 -- base options
 --------------------
+-- vim.scriptencoding = "utf-8"
+-- opt.encoding = "utf-8"
+-- opt.fileencoding = "utf-8"
+opt.wrap = false          -- no Wrap lines
 -- opt.guicursor = ""
-opt.relativenumber = true -- 设置相对行号
+opt.relativenumber = true -- set relative line number
 opt.mouse = "a"           -- mouse nil/"a"
 opt.tabstop = 2
 opt.softtabstop = 2
@@ -44,7 +48,7 @@ cmd [[
 ]]
 
 autocmd("FileType", {
-  pattern = { "c", "cpp", "lua", "sh", "go" },
+  pattern = { "vue", "typescript", "javascript", "html", "css", "c", "cpp", "lua", "sh", "go" },
   callback = function()
     autocmd("BufWritePre", {
       callback = function()

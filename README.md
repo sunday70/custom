@@ -22,6 +22,6 @@ git clone https://github.com/sunday70/custom ~/.config/nvim/lua/custom && nvim
 
 This is NvChad config.
 
-## reference
+## reference ticktechman
 
 https://github.com/ticktechman/nvchad-custom

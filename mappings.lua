@@ -26,7 +26,7 @@ M.general = {
 
   n = {
     -- lsp text document/hover
-    ["<leader>ll"] = { "<cmd> lua vim.lsp.buf.hover() <CR>", "Lsp text document" },
+    ["<leader>ld"] = { "<cmd> lua vim.lsp.buf.hover() <CR>", "Lsp text document" },
 
     -- ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 

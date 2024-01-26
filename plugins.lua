@@ -111,6 +111,16 @@ local plugins = {
     "tamago324/lsp-preview-hover-doc.nvim",
   },
 
+  -- fold code
+  {
+    "anuvyklack/pretty-fold.nvim",
+    config = function()
+      require("fold-preview").setup {
+        -- Your configuration goes here.
+      }
+    end,
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

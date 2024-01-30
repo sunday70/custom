@@ -23,6 +23,10 @@ local servers = {
   "clangd",
   "bashls",
   "taplo",
+
+  -- dockerfile
+  "dockerls",
+  "docker_compose_language_service",
 }
 
 for _, lsp in ipairs(servers) do

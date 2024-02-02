@@ -353,42 +353,42 @@ M.nvterm = {
 
   n = {
     -- toggle in normal mode
-    ["<A-i>"] = {
+    ["<leader>h"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
       "toggle floating term",
     },
 
-    ["<A-h>"] = {
-      function()
-        require("nvterm.terminal").toggle "horizontal"
-      end,
-      "toggle horizontal term",
-    },
-
-    ["<A-v>"] = {
-      function()
-        require("nvterm.terminal").toggle "vertical"
-      end,
-      "toggle vertical term",
-    },
+    -- ["<A-h>"] = {
+    --   function()
+    --     require("nvterm.terminal").toggle "horizontal"
+    --   end,
+    --   "toggle horizontal term",
+    -- },
+    --
+    -- ["<A-v>"] = {
+    --   function()
+    --     require("nvterm.terminal").toggle "vertical"
+    --   end,
+    --   "toggle vertical term",
+    -- },
 
     -- new
 
-    ["<leader>h"] = {
+    ["<leader>v"] = {
       function()
         require("nvterm.terminal").new "horizontal"
       end,
       "new horizontal term",
     },
 
-    ["<leader>v"] = {
-      function()
-        require("nvterm.terminal").new "vertical"
-      end,
-      "new vertical term",
-    },
+    -- ["<leader>v"] = {
+    --   function()
+    --     require("nvterm.terminal").new "vertical"
+    --   end,
+    --   "new vertical term",
+    -- },
   },
 }
 --
@@ -480,6 +480,10 @@ M.disabled = {
     ["<C-s>"] = "",
     -- focus
     ["<leader>e"] = "",
+    -- term
+    ["A-i"] = "",
+    ["A-h"] = "",
+    ["A-v"] = "",
   },
 }
 

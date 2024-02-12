@@ -35,7 +35,28 @@ g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets"
 
 -- netrw
 g.netrw_banner = 0
-g.netrw_liststyle = 3
+-- g.netrw_liststyle = 3
+cmd [[
+function! NetrwMapping()
+  noremap <buffer> t j
+  noremap <buffer> n k
+  noremap <buffer> s l
+  noremap <buffer> j t
+  noremap <buffer> k n
+  noremap <buffer> l s
+  noremap <buffer> T J
+  noremap <buffer> N k
+  noremap <buffer> S L
+  noremap <buffer> J T
+  noremap <buffer> K N
+  noremap <buffer> L S
+endfunction
+
+augroup netrw_mapping
+  autocmd!
+  autocmd filetype netrw call NetrwMapping()
+augroup END
+]]
 
 -- goto last postion
 cmd [[au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif]]

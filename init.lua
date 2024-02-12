@@ -35,6 +35,7 @@ g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets"
 
 -- netrw
 g.netrw_banner = 0
+g.netrw_liststyle = 3
 
 -- goto last postion
 cmd [[au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif]]

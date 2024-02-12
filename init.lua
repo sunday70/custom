@@ -48,7 +48,8 @@ cmd [[
 ]]
 
 autocmd("FileType", {
-  pattern = { "vue", "typescript", "javascript", "html", "css", "c", "cpp", "lua", "sh", "go" },
+  -- pattern = { "vue", "typescript", "javascript", "html", "css", "c", "cpp", "lua", "sh", "go" },
+  pattern = { "c", "cpp", "lua", "sh", "go" }, -- 自动格式化代码
   callback = function()
     autocmd("BufWritePre", {
       callback = function()

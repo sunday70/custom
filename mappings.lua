@@ -25,6 +25,9 @@ M.general = {
   },
 
   n = {
+    -- vimtree
+    ["<leader>e"] = { "<cmd> Explore <CR>", "Switch to netrw" },
+
     -- close buffers
     ["<leader>x"] = { "<cmd> bd <CR>", "Close buffers" },
 
@@ -473,8 +476,6 @@ M.disabled = {
   },
   n = {
     ["<C-s>"] = "",
-    -- focus
-    ["<leader>e"] = "",
     -- term
     ["A-i"] = "",
     ["A-h"] = "",

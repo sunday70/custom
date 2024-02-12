@@ -122,6 +122,16 @@ local plugins = {
     end,
   },
 
+  -- vim/nvim tree
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      -- Enable Netrw to make the 'gx' shortcut work
+      disable_netrw = false,
+      hijack_netrw = false,
+    },
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

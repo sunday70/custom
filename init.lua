@@ -59,4 +59,7 @@ autocmd("FileType", {
   end,
 })
 
+-- Do not open Netrw at startup, we only need Netrw for the 'gx' shortcut to still work
+cmd [[autocmd VimEnter * silent! au! FileExplorer *]]
+
 -------------------------------------------------------------------------------

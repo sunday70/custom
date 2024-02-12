@@ -34,7 +34,7 @@ M.general = {
     -- lsp text document/hover
     ["<leader>ld"] = { "<cmd> lua vim.lsp.buf.hover() <CR>", "Lsp text document" },
 
-    -- ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
+    ["<C-c>"] = { "<cmd> noh <CR>", "no highlight" },
 
     -- read source code
     ["<leader>tt"] = { "<cmd> TagbarToggle <CR>", "Toggle tagbar" },
@@ -49,17 +49,12 @@ M.general = {
     ["<leader>q"] = { "<cmd> wqa! <CR>", "Quit all" },
 
     -- switch between windows
+    ["<C-h>"] = { "<C-w>h", "Window left" },
     ["<C-t>"] = { "<C-w>j", "Window down" },
     ["<C-n>"] = { "<C-w>k", "Window up" },
     ["<C-s>"] = { "<C-w>l", "Window right" },
-    -- ["<leader>\\"] = { "<C-w>v", "Create window from right" },
-    -- ["<leader>|"] = { "<C-w>s", "Create window from down" },
-
-    -- Resize with arrows
-    ["<C-up>"] = { "<cmd> res -5<CR>", "" },
-    ["<C-down>"] = { "<cmd> res +5<CR>", "" },
-    ["<C-left>"] = { "<cmd> vertical resize+5<CR>", "" },
-    ["<C-right>"] = { "<cmd> vertical resize-5<CR>", "" },
+    ["<leader>\\"] = { "<C-w>v", "Create window from right" },
+    ["<leader>|"] = { "<C-w>s", "Create window from down" },
 
     -- -- Copy all
     -- ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },

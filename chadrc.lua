@@ -7,7 +7,7 @@ local highlights = require "custom.highlights"
 M.ui = {
   theme_toggle = { "everforest", "nord" },
   theme = "everforest",
-  transparency = false, -- background transparent
+  transparency = true, -- background transparent
   hl_override = highlights.override,
   hl_add = highlights.add,
 }
